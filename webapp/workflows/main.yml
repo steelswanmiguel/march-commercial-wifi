@@ -20,3 +20,5 @@ jobs:
 
       - name: Run Prettier (optional)
         run: npx prettier --check .
+
+runs-on: self-hosted

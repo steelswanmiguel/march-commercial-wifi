@@ -7,7 +7,7 @@ on:
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -20,5 +20,3 @@ jobs:
 
       - name: Run Prettier (optional)
         run: npx prettier --check .
-
-runs-on: self-hosted
